@@ -1,18 +1,14 @@
-
 import './App.css';
+import WelcomeBack from './WelcomeBack.js'
 
 function App() {
-  const name = "Robbie";
-  const url = "https://github.com/robbiemwoolf";
-  const linkText = "GitHub profile";
-  const element = (
-    <p>
-      {" "}
-      Hey, Robbie! Go checkout your<a href={url}>{linkText}</a>.
-    </p>
+  return (
+    <>
+      <WelcomeBack name="Joe" adjective="funny" />
+      <WelcomeBack name="Anna" adjective="clever" />
+      <WelcomeBack />
+    </>
   );
-
-  return element;
 };
 
 export default App;
